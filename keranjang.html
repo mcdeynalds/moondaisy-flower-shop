@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+         
+<body>
+    <header>
+      <div class="logo" align="center">
+        <img src="assets/logo.jpg" alt="logo-toko" title="moon daisy florist" width="200px">
+      </div>
+        
+      <nav align="center">
+          <a href="index.html">HOME</a>
+          <a href="product.html">PRODUCT</a>
+          <a href="keranjang.html">CART</a>
+          <a href="form.html">FORMULIR</a>
+      </nav>
+      <hr>
+    </header>  
+
+    <main>
+        <section class="keranjang">
+            <h2>KERANJANG BELANJA</h2> <hr>
+
+            <div>
+                <table class="tabel-keranjang" align="center">
+                    <thead>
+                        <tr>
+                            <th>Produk</th>
+                            <th>Jumlah</th>
+                            <th>Harga</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="produk-keranjang">
+                                <span>1.</span>
+                                <img src="assets/ee-shaped.jpg" alt="heart shaped" width="60px">
+                                <span>Heart Shaped</span>
+                            </td>
+                            <td class="center">1</td>
+                            <td class="center">Rp 950.000</td>
+                        </tr>
+
+                        <tr>
+                            <td class="produk-keranjang">
+                                <span>2.</span>
+                                <img src="assets/a-indigo.jpg" alt="indigo flower" width="60px">
+                                <span>Indigo Flower</span>
+                            </td>
+                            <td class="center">1</td>
+                            <td class="center">Rp 1.550.000</td>
+                        </tr>
+
+                        <tr>
+                            <td class="produk-keranjang">
+                                <span>3.</span> 
+                                <img src="assets/dd-ohara.jpg" alt="ohara box" width="60px">
+                                <span>Ohara Box</span>
+                            </td>
+                            <td class="center">1</td>
+                            <td class="center">Rp 2.250.000</td>
+                        </tr>
+
+                        <tr>
+                            <th>Total</th>
+                            <th >3</th>
+                            <th>Rp. 4.350.000</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-kirim">
+                <h2>Informasi Pengiriman</h2>
+                <hr>
+                <p>Pilih Tanggal & Waktu Pengiriman :</p>
+                <input type="datetime-local" id="tgl-kirim" name="tgl-kirim">
+                <p>Pesan Kartu Pribadi Anda :</p>
+                <textarea id="pesan" name="pesan" rows="4" cols="50" placeholder="ex : A little gift for the wonderful you. May it bring smiles and warmth."></textarea>
+            </div>
+        </section>
+
+        <section class="checkout">
+            <h2>check out</h2>
+            <p>Total Belanja : Rp 4.350.000</p>
+            <a href="form.html"><button type="button" class="checkout-button">Check out</button></a>
+        </section>
+
+        <aside class="promosi">
+            <p>@MOONDAISY</p>
+            <h4>FOLLOW US & STAY IN TOUCH</h4>
+            <p>Jadilah orang pertama yang menemukan koleksi baru, penawaran khusus, dan semua hal dari MOONDAISY</p>
+            <input id="email" type="email" placeholder="Enter your email" > <br> <br>
+            <input type="submit" value="SIGN UP" onclick="alert('Selamat Bergabung Bersama MOONDAISY!')">
+            <p>Dengan mendaftar, kamu mengizinkan MOONDAISY mengirimkan pesan manis dan kabar spesial langsung untukmu..</p>
+            <a href="#" target="_top" class="p">KEMBALI KE BAGIAN ATAS</a>
+        </aside>
+    </main>
+
+    <footer>
+        <audio src="assets/Selena Gomez, Benny Blanco-Ojos Tristes.m4a" autoplay></audio>
+
+        
+        <table cellpadding="15px"> 
+            <tr>
+                <th>WHERE TO FIND US :</th>
+                <th>CONTACT US :</th>
+                <th>OPENING HOURS :</th>
+                <th>FOLLOW OUR SOCIAL MEDIA :</th>
+            </tr>
+            <tr>
+                <td>Jl. Setiabudi No. 128B, Gegerkalong<br>Kota Bandung, Jawa Barat.</td>
+                <td ><a href="mailto:deafriliart@gmail.com">Email : moondaisy@gmail.com</a> <br> <a href="tel:085959257370">Phone : +62 859-592-573-70</a></td>
+                <td>Senin-Sabtu, 08.00-20.00 WIB<br>Minggu, 10.00-17.00 WIB</td>
+                <td>
+                    <a href="https://www.instagram.com/deafrlt?igsh=MTU3ZjlqaXRwczZnOA==" target="_blank"><img src="assets/ig.jpg" alt="instagram" width="50px" title="klik gambar untuk mengunjungi instagram kami"></a>
+                    <a href="https://wa.me/6285959257370" target="_blank"><img src="assets/wa.jpg" alt="whatsapp" width="50px" title="klik gambar untuk terhubung ke whatsapp kami"></a>
+                    <a href="https://x.com/belongstodey?s=21" target="_blank"><img src="assets/x.jpg" alt="twitter" width="50px" title="klik gambar untuk mengunjungi twitter kami"></a>
+                    <a href="https://www.tiktok.com/@meandmybang?_t=ZS-8xUgXbDeacX&_r=1" target="_blank"><img src="assets/tiktok.jpg" alt="tiktok" width="35px" title="klik gambar untuk mengunjungi tiktok kami"></a>
+                </td>
+            </tr>
+        </table>
+        <br> <br>
+      
+        <figure align="center">
+            <hr>
+            <p>METODE PEMBAYARAN</p> 
+        <img src="assets/ovo.webp" alt="ovo payment" width="50px" title="ovo payment">
+        <img src="assets/dana.webp" alt="dana payment" width="50px" title="dana payment">
+        <img src="assets/paypal.webp" alt="paypal payment" width="50px" title="paypal payment">
+        <img src="assets/bca.webp" alt="bca payment" width="50px" title="bca payment">
+        <img src="assets/bri.webp" alt="bri payment" width="50px" title="bri payment">
+        <img src="assets/livin.webp" alt="mandiri payment" width="50px" title="mandiri payment">
+        <img src="assets/alfa.webp" alt="alfamart payment" width="50px" title="alfamart payment">
+        <img src="assets/spay.webp" alt="shopeepay payment" width="50px" title="shopeepay payment">
+        <img src="assets/visa.webp" alt="visa payment" width="50px" title="visa payment">
+            <hr>
+        </figure>
+
+        <p id="copy" align="center">&copy; 2023 MOONDAISY FLORIST. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+
+</html>

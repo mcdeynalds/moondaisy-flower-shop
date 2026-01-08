@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* -------------------------- CSS BERANDA---------------------------------------------------------------------------- */
+body {
+    margin:0;
+}
+.logo{
+    margin: 0 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: x-small;
+    font-family : 'googleapis';
+    margin: 10px 20px;
+    color: maroon;
+}
+
+#flower-h {
+    margin:0;
+    background-color: #f1ede8;
+}
+
+.judul {
+    text-decoration: underline;
+    letter-spacing: 5px;
+    font-size: x-small;
+    font-family : 'googleapis';
+}
+
+.nama-bunga {
+    font-family: 'googleapis';
+    font-size: 15px;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.harga {
+    font-family: 'googleapis';
+    font-size: smaller;
+    color: maroon;
+}
+
+.diskon {
+    text-decoration: line-through;
+    font-size: x-small;
+    color: hsla(268, 6%, 49%, 0.6);    
+}
+
+.p {
+    font-family: 'googleapis';
+    word-spacing: 5px;
+    font-size: 15px;
+    color: #333;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+mark {
+    background-color: #d5d1cd;
+}
+
+.see-all a{
+    text-decoration: none;
+    font-size: small;
+    font-family : 'googleapis';
+    color: maroon;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #f1ede8;
+}
+
+#about {
+    width: 100%;
+    margin: 0;
+    background-image: url(../assets/toko.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about p{
+    color: white;
+    background-color: rgba(44, 44, 44, 0.4);
+    padding: 24px;
+    font-size: 1.1em;
+    word-spacing: 5px;
+    text-align: justify;
+}
+
+p.p::selection {
+    background: lightblue;
+}
+
+#brand {
+    color: rgb(150, 23, 23);
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #524d4d96;
+    letter-spacing: 2px;
+}
+
+.promosi{
+    margin: -9px 0px 0px;
+    background-color: #f1ede8;
+    padding: 32px 0; 
+    text-align: center;
+    font-family: 'googleapis';
+    word-spacing: 5px;
+    font-size: 15px;
+    color: #333;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+#email {
+    text-align: center;
+    font-family: 'googleapis';
+    border-top: none;
+    border-bottom: 1px solid #333; 
+    background-color: transparent;       
+    width: 400px;                  
+    font-size: smaller;
+    color: #333;
+}
+
+.from {
+    margin-top: 15px;
+    color: white;
+    font-size: medium;
+    padding: 15px;
+    letter-spacing: 2px;
+    background-color: #33333334;
+}
+
+.promosi input[type=submit] {
+    background-color: #f1ede8;
+    color: maroon;
+    border: none;
+    padding: 10px 20px;
+    font-size: small;
+    font-family: 'googleapis';
+    cursor: pointer; 
+    border-radius: 8px; 
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+    font-family: 'googleapis';
+    font-size: small;
+    color: #333;
+}
+
+footer table {
+    width: 100%;
+    margin-top: 32px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+footer table td {
+    font-family: 'googleapis';
+    font-size: small;
+    color: #333;
+    padding: 12px 18px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+footer table td a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer table td a:hover {
+    color: maroon;
+    text-decoration: underline;
+}
+
+#copy {
+    color: #333;
+    font-size: small;
+    margin: 40px 0px -20px 0px;
+}
+
+
+/* -------------------------- CSS PRODUK---------------------------------------------------------------------------- */
+#judul-p{
+    background-color: rgba(44, 44, 44, 0.4);
+    padding: 24px;
+    font-size: 1.1em;
+    word-spacing: 5px;
+    text-align: justify;
+    color: white;
+}
+
+#judul-p a{
+    letter-spacing: 5px;
+    font-size: x-small;
+    font-family : 'googleapis';
+    color: white;
+}
+
+#judul-p a:hover {
+    color: antiquewhite;
+}
+
+#j-product{
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+}
+
+.list-produk {
+  background-color: #f1ede8;
+  border: 1px solid #ebebeb;
+  padding: 24px;
+  margin: 23px;
+  border-radius: 25px;
+  width: 93%;
+}
+
+.item-produk {
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.734);
+  border-radius: 16px;
+  padding: 16px 8px;
+}
+
+.item-produk img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.item-produk figcaption {
+  margin: 12px 0 8px 5px;
+}
+
+.item-produk button {
+  background-color: #f1ede8;
+  color: rgb(128, 13, 13);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: 'googleapis';
+  font-size: small;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+/* -------------------------- CSS KERANJANG---------------------------------------------------------------------------- */
+
+.keranjang h2 {
+    font-family: 'geoglapis';
+    text-align: center;
+    color: #333;
+    letter-spacing: 2px;
+    font-size: medium;
+}
+
+.tabel-keranjang {
+    width: 50%;
+    background-color: #fff;
+    margin-top: 25px;
+    font-size: smaller;
+    letter-spacing: 2px;
+}
+
+.tabel-keranjang tr:nth-child(even) {
+    background-color: #f1ede8;
+}
+
+.tabel-keranjang th {
+    background: #f1ede8;
+    color: maroon;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.tabel-keranjang td {
+    padding: 10px;
+}
+
+.produk-keranjang {
+    text-align: left; 
+    vertical-align: middle;
+}
+
+.produk-keranjang span {
+    margin-left: 10px;
+    font-weight: 500px;
+    color: #333;
+    font-size: 1em;
+    vertical-align: top;
+}
+
+.center {
+    text-align: center;
+}
+
+.produk-keranjang img{
+    border-radius: 5px;
+}
+
+.keranjang > div:last-child {
+    border-radius: 5px;
+    margin: 50px auto 0 auto;
+    width: 30%;
+    font-size: smaller;
+    letter-spacing: 1px;
+}
+
+
+.info-kirim input[type="datetime-local"],
+.info-kirim textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: small;
+    margin-bottom: 5px;
+    background: #f1ede8;
+    color: #333;
+    font-family: 'geoglapis';
+}
+
+.checkout {
+    margin: 0 auto 32px auto;
+    padding: 32px 24px;
+    text-align: center;
+    font-size: smaller;
+}
+
+.checkout h2 {
+    color: #7c4d2b;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.checkout p {
+    color: #444;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.checkout-button {
+    background: #7c4d2b;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 32px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'geoglapis';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.checkout-button:hover {
+    background: #f1ede8;
+    color: #7c4d2b;
+}
+
+/* -------------------------- CSS FORM---------------------------------------------------------------------------- */
+
+#f-email {
+    margin-left: 100px;
+    width: 50%;
+}
+
+#f-email p, label{
+    color: #444;
+    font-size: smaller;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.form input[type="email"], 
+input[type="text"], textarea, 
+select, input[type="number"], input[type="reset"] {
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #faf9f7;
+    color: #333;
+    font-size: smaller;
+    letter-spacing: 1px;
+    font-family: 'geoglapis';
+    cursor: pointer;
+}
+
+.bg-form {
+    background-color: #f1ede8;
+    padding: 20px;
+    border-radius: 16px;
+    margin: 20px auto;
+    width: 80%;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
+#rrj {
+    color: #333;
+    letter-spacing: 2px;
+    text-decoration: underline;
+
+}
+
+#btn-kirim input[type="submit"] {
+    background-color: #f1ede8;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: small;
+    font-family: 'googleapis';
+    cursor: pointer; 
+    border-radius: 3px;
+    margin-bottom: 20px;
+    width: 84%;
+    letter-spacing: 1.5px;
+}
+
+#btn-kirim input[type="submit"]:hover {
+    background-color: gainsboro;
+}
+
+td input[type="reset"]:hover{
+    background-color: antiquewhite;
+}
+
+.help {
+    color: #333;
+    font-size: small;
+    margin-top: 20px;
+}
+
+details p{
+    color: #333;
+    font-size: smaller;
+    letter-spacing: 1px;
+}
+
+#rincian {
+    margin: 0;
+}
+
+input:checked+label {
+    color: rgb(127, 57, 57);
+    font-weight: bold;
+}
+
+div > p{
+    color:#333;
+}

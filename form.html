@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Pengiriman</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+        <header>
+      <div class="logo" align="center">
+        <img src="assets/logo.jpg" alt="logo-toko" title="moon daisy florist" width="200px">
+      </div>
+        
+      <nav align="center">
+          <a href="index.html">HOME</a>
+          <a href="product.html">PRODUCT</a>
+          <a href="keranjang.html">CART</a>
+          <a href="form.html">FORMULIR</a>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+        <section>
+            <form class="form">
+                <div id="f-email">
+                    <p><u>MASUKKAN ALAMAT EMAIL ANDA</u></p> 
+                    <label for="f-email">Email Anda :</label> 
+                    <input type="email" id="f-email" name="f-email" placeholder="Email Aktif"> <br> 
+                    <p>
+                        <input type="checkbox" id="f-cek-email" name="f-cek-email" value="iya">
+                        <label for="iya">Konfirmasi pesanan akan dikirimkan ke alamat email ini. Anda dapat membuat akun setelah menyelesaikan pembayaran.</label>
+                    </p>
+                </div>
+
+                <div class="bg-form">
+                    <hr> <p>MASUKKAN DATA PRIBADI ANDA</p> <hr>
+                    <br>
+                    <table cellpadding="10px" cellspacing="1px" class="font-form">
+                        <tr>
+                            <td><label for="f-nama-depan">Nama Depan</label> <br>
+                                <input type="text" id="f-nama-depan" name="f-nama-depan" placeholder="Nama Depan" minlength="3" maxlength="25">
+                            </td>
+                            <td>
+                                <label for="f-nama-belakang">Nama Belakang</label> <br>
+                                <input type="text" id="f-nama-belakang" name="f-nama-belakang" placeholder="Nama Belakang" minlength="3" maxlength="25" >
+                            </td>
+                            <td rowspan="10">
+                                <p id="rrj"><b>Rincian Belanja Anda :</b></p>
+                                <iframe name="rincian-keranjang" width="290px" height="350px" src="rincian.html" target="rincian-keranjang"></iframe><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <label for="f-alamat">Alamat</label> <br>
+                                <textarea name="f-alamat" id="f-alamat" cols="60px" rows="3px" placeholder="Alamat"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <p contenteditable="true" style="font-size: small;" >Tulis catatan khusus untuk penjual di sini...</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="f-negara">Negara</label> <br>
+                                <select>
+                                    <option value="indonesia">Indonesia</option>
+                                </select>
+                            </td>
+
+                            <td>
+                                <label for="f-provinsi">Provinsi</label> <br>
+                                <select name="f-provinsi" id="f-provinsi">
+                                    <option value="f-provinsi">Jawa Barat</option>
+                                    <option value="f-provinsi">Jawa Timur</option>
+                                    <option value="f-provinsi">Jawa Tengah</option>
+                                    <option value="f-provinsi">Bali</option>
+                                    <option value="f-provinsi">Jakarta</option>
+                                    <option value="f-provinsi">Sumatera Utara</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="f-kota">Kota</label> <br>
+                                <input type="text" id="f-kota" name="f-kota" placeholder="Kota">
+                            </td>
+                            <td>
+                                <label for="f-kecamatan">Kecamatan</label> <br>
+                                <input type="text" id="f-kecamatan" name="f-kecamatan" placeholder="kecamatan">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="f-kodepos">Kode Pos</label><br>
+                                <input type="number" id="f-number" name="f-number" placeholder="Kode Pos">
+                            </td>
+
+                            <td>
+                                <label for="f-notelp">Nomor Telepon</label> <br>
+                                <input type="number" id="f-notelp" name="f-notelp" placeholder="Nomor Telepon">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"><input type="reset"></td>
+                        </tr>
+                    
+                    </table>
+                </div>
+            </form>
+        </section>
+
+        <section class="bg-form">
+            <hr> <p>METODE PENGIRIMAN</p> <hr>
+            <form>
+                <div >
+                    <table cellpadding="px" cellspacing="1px" class="font-form">
+                        <tr>
+                            <td>
+                                <input type="radio" id="f-standar" name="f-metode-pengiriman" value="standar">
+                                <label for="f-standar">Pengiriman Standar</label> <br>
+                                <p>Pengiriman standar akan tiba dalam 3-5 hari kerja.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" id="f-ekspres" name="f-metode-pengiriman" value="ekspres">
+                                <label for="f-ekspres">Pengiriman Ekspres</label> <br>
+                                <p>Pengiriman ekspres akan tiba dalam 1-2 hari kerja.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" id="f-instan" name="f-metode-pengiriman" value="instan">
+                                <label for="f-instan">Pengiriman Instan</label> <br>
+                                <p>Pengiriman instan akan tiba pada hari yang sama.</p>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </form>
+        </section>
+
+        <section class="bg-form">
+            <hr> <p>PILIH METODE PEMBAYARAN</p> <hr>
+            <table cellpadding="10px" cellspacing="1px">
+                <tr>
+                    <td><input type="radio" id="f-ovo" name="f-metode-pembayaran" value="ovo">OVO</td>
+                    <td><input type="radio" id="f-dana" name="f-metode-pembayaran" value="dana">DANA</td>
+                    <td><input type="radio" id="f-paypal" name="f-metode-pembayaran" value="gopay">PAYPAL</td>
+                    <td><input type="radio" id="f-bca" name="f-metode-pembayaran" value="bca">BCA</td>
+                    <td><input type="radio" id="f-bri" name="f-metode-pembayaran" value="bri">BRI</td>
+                    <td><input type="radio" id="f-mandiri" name="f-metode-pembayaran" value="mandiri">MANDIRI</td>
+                    <td><input type="radio" id="f-alfamart" name="f-metode-pembayaran" value="alfamart">ALFAMART</td>
+                    <td><input type="radio" id="f-shopeepay" name="f-metode-pembayaran" value="shopeepay">SHOPEEPAY</td>
+                    <td><input type="radio" id="f-visa" name="f-metode-pembayaran" value="visa">VISA</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="btn-kirim" align="center">
+            <input type="submit" value="KIRIM PESANAN" onclick="alert('Pesanan Diterima!! Untuk melihat informasi pesananmu, harap check email kamu ya... TERIMA KASIH')">
+            <details>
+                <summary class="help"><b>Butuh Bantuan?</b></summary>
+                <p>Hubungi kami di WhatsApp atau email jika ada kendala saat pemesanan.</p>
+            </details>
+        </section>
+
+        <br> <br> <br>
+        
+        <aside class="promosi">
+            <p>@MOONDAISY</p>
+            <h4>FOLLOW US & STAY IN TOUCH</h4>
+            <p>Jadilah orang pertama yang menemukan koleksi baru, penawaran khusus, dan semua hal dari MOONDAISY</p>
+            <input id="email" type="email" placeholder="Enter your email" > <br> <br>
+            <input type="submit" value="SIGN UP" onclick="alert('Selamat Bergabung Bersama MOONDAISY!')">
+            <p>Dengan mendaftar, kamu mengizinkan MOONDAISY mengirimkan pesan manis dan kabar spesial langsung untukmu..</p>
+            <a href="index.html" class="p" target="_parent">Kembali ke Halaman Utama</a>        </aside>
+    </main>
+
+    <footer>
+        <audio src="assets/Selena Gomez, Benny Blanco-Ojos Tristes.m4a" autoplay></audio>
+
+                  
+        <table cellpadding="15px"> 
+            <tr>
+                <th>WHERE TO FIND US :</th>
+                <th>CONTACT US :</th>
+                <th>OPENING HOURS :</th>
+                <th>FOLLOW OUR SOCIAL MEDIA :</th>
+            </tr>
+            <tr>
+                <td>Jl. Setiabudi No. 128B, Gegerkalong<br>Kota Bandung, Jawa Barat.</td>
+                <td ><a href="mailto:deafriliart@gmail.com">Email : moondaisy@gmail.com</a> <br> <a href="tel:085959257370">Phone : +62 859-592-573-70</a></td>
+                <td>Senin-Sabtu, 08.00-20.00 WIB<br>Minggu, 10.00-17.00 WIB</td>
+                <td>
+                    <a href="https://www.instagram.com/deafrlt?igsh=MTU3ZjlqaXRwczZnOA==" target="_blank"><img src="assets/ig.jpg" alt="instagram" width="50px" title="klik gambar untuk mengunjungi instagram kami"></a>
+                    <a href="https://wa.me/6285959257370" target="_blank"><img src="assets/wa.jpg" alt="whatsapp" width="50px" title="klik gambar untuk terhubung ke whatsapp kami"></a>
+                    <a href="https://x.com/belongstodey?s=21" target="_blank"><img src="assets/x.jpg" alt="twitter" width="50px" title="klik gambar untuk mengunjungi twitter kami"></a>
+                    <a href="https://www.tiktok.com/@meandmybang?_t=ZS-8xUgXbDeacX&_r=1" target="_blank"><img src="assets/tiktok.jpg" alt="tiktok" width="35px" title="klik gambar untuk mengunjungi tiktok kami"></a>
+                </td>
+            </tr>
+        </table>
+        <br> <br>
+      
+        <figure align="center">
+            <hr>
+            <p>METODE PEMBAYARAN</p> 
+            <img src="assets/ovo.webp" alt="ovo payment" width="50px" title="ovo payment">
+            <img src="assets/dana.webp" alt="dana payment" width="50px" title="dana payment">
+            <img src="assets/paypal.webp" alt="paypal payment" width="50px" title="paypal payment">
+            <img src="assets/bca.webp" alt="bca payment" width="50px" title="bca payment">
+            <img src="assets/bri.webp" alt="bri payment" width="50px" title="bri payment">
+            <img src="assets/livin.webp" alt="mandiri payment" width="50px" title="mandiri payment">
+            <img src="assets/alfa.webp" alt="alfamart payment" width="50px" title="alfamart payment">
+            <img src="assets/spay.webp" alt="shopeepay payment" width="50px" title="shopeepay payment">
+            <img src="assets/visa.webp" alt="visa payment" width="50px" title="visa payment">
+            <hr>
+        </figure>
+
+        <p id="copy" align="center">&copy; 2023 MOONDAISY FLORIST. ALL RIGHTS RESERVED.</p>
+
+    </footer>
+</body>
+
+
+</html>
